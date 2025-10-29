@@ -1,0 +1,36 @@
+guid: 05024ad8-fce4-45b9-82a8-8c32f0c94299
+answer:
+  name: Test - Total product sales in Midwest
+  tables:
+  - id: (Sample) Retail - Apparel
+    name: (Sample) Retail - Apparel
+    fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+  search_query: "top 10 [product] by [sales] [region].Midwest"
+  answer_columns:
+  - name: Total sales
+  - name: product
+  table:
+    table_columns:
+    - column_id: Total sales
+      show_headline: false
+    - column_id: product
+      show_headline: false
+    ordered_column_ids:
+    - product
+    - Total sales
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: STACKED_COLUMN
+    chart_columns:
+    - column_id: Total sales
+    - column_id: product
+    axis_configs:
+    - x:
+      - product
+      "y":
+      - Total sales
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"product\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3166fa82-8c1a-40b2-a5bb-637731b3624c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"db25d592-37f3-4626-b938-28a6be831dfa\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"product\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#2E75F0\"}]}"
+  display_mode: CHART_MODE
+  dynamic_name: Test - Total product sales in Midwest
