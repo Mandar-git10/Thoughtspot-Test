@@ -1,0 +1,36 @@
+guid: b866de09-6cb3-406b-95d2-187c7191a5fd
+answer:
+  name: Top 10 products Sale in Midwest-v2
+  tables:
+  - id: (Sample) Retail - Apparel
+    name: (Sample) Retail - Apparel
+    fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+  search_query: "top 10 [product] [region].Midwest"
+  answer_columns:
+  - name: Number of product
+  - name: product
+  table:
+    table_columns:
+    - column_id: Number of product
+      show_headline: false
+    - column_id: product
+      show_headline: false
+    ordered_column_ids:
+    - product
+    - Number of product
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: BAR
+    chart_columns:
+    - column_id: Number of product
+    - column_id: product
+    axis_configs:
+    - x:
+      - product
+      "y":
+      - Number of product
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"product\",\"columnProperty\": {}},{\"columnId\": \"Number of product\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"05443e86-b887-4468-99e4-b28710b133e8\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Number of product\"],\"isOpposite\": false}},{\"id\": \"76d1cfe9-0185-4fd1-821a-f7cea691b81a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"product\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Number of product\",\"color\": \"#2E75F0\"}]}"
+  display_mode: CHART_MODE
+  dynamic_name: Top 10 products Sale in Midwest-v2
